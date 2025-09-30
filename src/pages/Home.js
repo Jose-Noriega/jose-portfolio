@@ -92,7 +92,7 @@ function Home() {
           color: '#000',
           fontWeight: 'bold'
         }}>
-          [AHITAGNI D]
+          [JOSE]
         </div>
         <div style={{ textAlign: 'right', fontSize: '14px' }}>
           <Link href='https://www.linkedin.com/in/ahitagnid/' color='#0077b5' underline={true}>LinkedIn</Link>
