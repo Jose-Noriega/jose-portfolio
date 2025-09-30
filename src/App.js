@@ -5,8 +5,9 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import Reading from './pages/Reading';
 import Publications from './pages/Publications';
-// import Projects from './pages/Projects';
 import Essays from './pages/Essays';
+import Projects from './pages/Projects';
+import Resume from './pages/Resume';
 import './App.css';
 
 function App() {
@@ -15,11 +16,9 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/reading" element={<Reading />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/resume" element={<Resume />} />
           <Route path="/publications" element={<Publications />} />
-          {/* <Route path="/projects" element={<Projects />} /> */}
-          <Route path="/essays" element={<Essays />} />
-          <Route path="/essays/:slug" element={<Essays />} />
         </Routes>
       </Layout>
     </Router>

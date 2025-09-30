@@ -88,8 +88,8 @@ function Navbar() {
             NAVIGATION
           </h3>
           <NavLink to="/">Home</NavLink>
-          <NavLink to="/reading">Reading</NavLink>
-          {/* <NavLink to="/projects">Projects</NavLink> */}
+          <NavLink to="/projects">Projects</NavLink>
+          <NavLink to="/resume">Resume</NavLink>
           <NavLink to="/publications">Publications</NavLink>
           <NavLink to="/essays">Essays</NavLink>
         </div>

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 export function ProjectList({ projlist, showPage }) {
     useEffect(() => {
-      document.title = "Projects | Ahitagni D";
+      document.title = "Projects | Jose Noriega";
   
       return () => {};
     }, []);

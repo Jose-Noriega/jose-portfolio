@@ -1,4 +1,4 @@
-import profile from '../assets/profile.jpeg'
+import profile from '../assets/profile.jpg'
 import React, { useEffect, useState } from 'react';
 import Contact from "../components/Contact";
 import { data } from '../contents/ContactData';
@@ -18,7 +18,7 @@ const Link = ({ href, children }) => (
 
 function Home() {
   useEffect(() => {
-    document.title = "Home | Ahitagni D";
+    document.title = "Home | Jose Noriega";
 
     return () => {};
   }, []);
@@ -53,8 +53,7 @@ function Home() {
     <div style={{ lineHeight: '1.2', fontSize: '16px', fontFamily: 'Lora' }}>
         <img src={profile} style={{width: 'max(30%, 145px)', aspectRatio: '1', borderRadius: '50%', marginTop: '20px', marginBottom: '20px', display: 'block', marginLeft: 'auto', marginRight: 'auto'}} alt="Banner" />
         <p>
-          I am Ahi, a junior at <Link href='https://www.rice.edu/'>Rice University</Link> studying EECS. I am interested in foundational models in Vision & Robotics.
-          I am a part of <Link href='https://neo.com/'>Neo</Link>, love building start-ups, hiking, and sailing. 
+          I am Jose, a junior at <Link href='https://www.rice.edu/'>Rice University</Link> studying Mechanical Engineering. I am interested in Robotics, Aerospace, and Defense.
         </p>
 
 
