@@ -18,7 +18,7 @@ const Link = ({ href, children }) => (
 
 function Home() {
   useEffect(() => {
-    document.title = "Home | Jose Noriega";
+    document.title = "Home | Jose G Noriega";
 
     return () => {};
   }, []);

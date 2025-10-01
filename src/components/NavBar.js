@@ -73,39 +73,69 @@ function Navbar() {
           left: isMobile ? 'auto' : 'calc(50% - 550px)',
           top: isMobile ? '0' : '50px',
           padding: '10px',
-          display: isMobile ? 'none' : 'block',
+          display: isMobile ? 'none' : 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between',
+          height: isMobile ? 'auto' : 'calc(100vh - 50px)',
           zIndex: 100,
         }}
       >
-        <div style={{ marginBottom: '30px' }}>
-          <h3 style={{ 
-            fontSize: '14px', 
-            fontFamily: 'Lora',
-            fontWeight: 'bold', 
-            marginBottom: '15px',
-            textTransform: 'uppercase'
-          }}>
-            NAVIGATION
-          </h3>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/projects">Projects</NavLink>
-          <NavLink to="/resume">Resume</NavLink>
-          <NavLink to="/publications">Publications</NavLink>
-          <NavLink to="/essays">Essays</NavLink>
-        </div>
-        
         <div>
-          <h3 style={{ 
-            fontSize: '14px', 
-            fontWeight: 'bold', 
-            marginBottom: '15px',
+          <div style={{ marginBottom: '30px' }}>
+            <h3 style={{ 
+              fontSize: '16px', 
+              fontFamily: 'Lora',
+              fontWeight: 'bold', 
+              marginBottom: '15px',
+              textTransform: 'uppercase'
+            }}>
+              <a
+              href="/Navigation"
+              style={{ color: 'inherit', textDecoration: 'none' }}
+            >
+              Navigation
+            </a>
+            </h3>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/projects">Projects</NavLink>
+            <NavLink to="/resume">Resume</NavLink>
+          </div>
+          
+          <div>
+            <h3 style={{ 
+              fontSize: '16px', 
+              fontWeight: 'bold', 
+              marginBottom: '15px',
+              fontFamily: 'Lora',
+              textTransform: 'uppercase'
+            }}>
+              <a
+              href="/socialMedia"
+              style={{ color: 'inherit', textDecoration: 'none' }}
+            >
+              FIND ME ON
+            </a>
+            </h3>
+            <NavLink to="https://linkedin.com/in/jose-g-noriega/" isExternal>Linkedin</NavLink>
+            <NavLink to="https://github.com/Jose-Noriega" isExternal>GitHub</NavLink>
+            <NavLink to="https://x.com/Jose_G_N" isExternal>X</NavLink>
+          </div>
+        </div>
+
+        <div style={{ marginBottom: '30px' }}>
+          <h3 style={{
+            fontSize: '16px',
+            fontWeight: 'bold',
             fontFamily: 'Lora',
-            textTransform: 'uppercase'
+            textTransform: 'uppercase',
           }}>
-            FIND ME ON
+            <a
+              href="/contact"
+              style={{ color: 'inherit', textDecoration: 'none' }}
+            >
+              CONTACT ME
+            </a>
           </h3>
-          <NavLink to="https://github.com/ahitagnied" isExternal>GitHub</NavLink>
-          <NavLink to="https://x.com/ahitagnied" isExternal>X</NavLink>
         </div>
       </nav>
 

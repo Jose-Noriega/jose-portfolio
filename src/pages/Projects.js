@@ -10,9 +10,9 @@ function Projects() {
       padding: '10px',
     }}>
       <div style={{ lineHeight: '1.2', fontSize: '16px', fontFamily: 'Lora' }}>
-        
+
         <p style={{marginBottom: '20px'}}>
-          I like 3D Vision and Robotics, a lot of my projects are related to these. I also dabbled in some Rocketry, Software, and Materials stuff back in the day.
+          I like Robotics, Aerospace, and Engineering design. I have worked on a variety of mechanical engineering applications to broaden my scope of what is possible with engineering.
         </p>
       
         <ProjectList projlist={projlist} isHome={false}/>

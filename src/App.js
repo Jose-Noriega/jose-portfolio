@@ -3,11 +3,12 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
-import Reading from './pages/Reading';
 import Publications from './pages/Publications';
-import Essays from './pages/Essays';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
+import Contact from './pages/Contact';
+import SocialMedia from './pages/SocialMedia';
+import Navigation from './pages/Navigation';
 import './App.css';
 
 function App() {
@@ -19,6 +20,9 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/publications" element={<Publications />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/Navigation" element={<Navigation />} />
+          <Route path="/SocialMedia" element={<SocialMedia />} />
         </Routes>
       </Layout>
     </Router>
