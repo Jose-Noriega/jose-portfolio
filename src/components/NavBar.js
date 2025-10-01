@@ -89,10 +89,7 @@ function Navbar() {
               marginBottom: '15px',
               textTransform: 'uppercase'
             }}>
-              <a
-              href="/Navigation"
-              style={{ color: 'inherit', textDecoration: 'none' }}
-            >
+            <a href="/Navigation" style={{ color: 'inherit', textDecoration: 'none' }}>
               Navigation
             </a>
             </h3>
@@ -110,7 +107,7 @@ function Navbar() {
               textTransform: 'uppercase'
             }}>
               <a
-              href="/socialMedia"
+              // href="/socialMedia"
               style={{ color: 'inherit', textDecoration: 'none' }}
             >
               FIND ME ON
@@ -131,9 +128,9 @@ function Navbar() {
           }}>
             <a
               href="/contact"
-              style={{ color: 'inherit', textDecoration: 'none' }}
+              style={{ color: 'inherit', textDecoration: 'none', }}
             >
-              CONTACT ME
+              <u>CONTACT ME</u>
             </a>
           </h3>
         </div>

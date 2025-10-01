@@ -3,7 +3,6 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
-import Publications from './pages/Publications';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
@@ -19,7 +18,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/resume" element={<Resume />} />
-          <Route path="/publications" element={<Publications />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/Navigation" element={<Navigation />} />
           <Route path="/SocialMedia" element={<SocialMedia />} />

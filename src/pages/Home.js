@@ -1,14 +1,5 @@
 import profile from '../assets/profile.jpg'
 import React, { useEffect, useState } from 'react';
-import Contact from "../components/Contact";
-import { data } from '../contents/ContactData';
-import { publist } from '../contents/PublicationList'
-import { PublicationList } from '../components/PublicationList';
-import { ProjectList } from '../components/ProjectList';
-import { projlist } from '../contents/ProjList'
-import { EssayList } from '../components/EssayList';
-import PhotoGallery from "../components/PhotoGallery";
-import { photos } from '../contents/Photos';
 
 const Link = ({ href, children }) => (
   <a href={href} style={{textDecoration: 'none', color: "#0a507e"}}>
@@ -21,26 +12,6 @@ function Home() {
     document.title = "Home | Jose G Noriega";
 
     return () => {};
-  }, []);
-
-  const limitedPubList = publist.slice(0, 3);
-  const limitedProjList = projlist.slice(0, 4);
-  const [essayFiles, setEssayFiles] = useState([]);
-
-  useEffect(() => {
-    const loadEssayFiles = async () => {
-      try {
-        const response = await fetch('/essays/manifest.json');
-        if (response.ok) {
-          const manifest = await response.json();
-          setEssayFiles(manifest.files);
-        }
-      } catch (err) {
-        console.error('Error loading essay files:', err);
-      }
-    };
-    
-    loadEssayFiles();
   }, []);
 
   return (
@@ -56,69 +27,40 @@ function Home() {
           I am Jose, a junior at <Link href='https://www.rice.edu/'>Rice University</Link> studying Mechanical Engineering. I am interested in Robotics, Aerospace, and Defense.
         </p>
 
-
-        {/* Contact and Teams Box*/}
-        <Contact data={data} />
-
         <h4 style={{ 
           fontSize: "16px", 
           textAlign: "left", 
           color: "#111",
         }}>
-          Research
+          About Me
         </h4>
 
         <p>
-          I research Video Understanding at <Link href='https://www.sievedata.com/'>Sieve</Link> to curate and scale high-fidelity video datasets for companies like <Link href='https://www.moonvalley.com/'>MoonValley</Link>. 
-          I also research Gaussian Splatting at the <Link href='https://computationalimaging.rice.edu/'>Computational Imaging Group</Link> with <Link href='https://scholar.google.com/citations?user=tI-oUmsAAAAJ&hl=en'> Dr. Ashok Veeraraghavan</Link>. 
-          
+          San Diego native
           <br/><br/>
-
-          Previously, I have developed the world's smallest batteries (30 um) for Colloidal Robotics at the <Link href='https://www.media.mit.edu/groups/nano-cybernetic-biotrek/overview/'>MIT Media Lab</Link>, researched Li/Na-ion batteries at 
-          the <Link href='https://ajayan.rice.edu/'>Ajayan Group</Link>, and deviced a method to convert plastic waste to energy at <Link href='https://scholar.google.com/citations?user=JlmilbMAAAAJ&hl=en'>IIT Guwahati.</Link>
+          Something else
         </p>
 
-        {/* limited publication list */}
         <h4 style={{ 
           fontSize: "16px", 
           textAlign: "left", 
           color: "#111",
         }}>
-          Publications
+          Projects
         </h4>
-        <PublicationList publist={limitedPubList} isHome={true}/>
         
         <h4 style={{ 
           fontSize: "16px", 
           textAlign: "left", 
           color: "#111",
         }}>
-          Photography
+          Work Experience
         </h4>
         <p>
-          Like pixels of all kinds. Most pictures using a PowerShot A540, sometimes a Nikon D5600.
+          Currently, I lead the mechanical engineering team in the Rice Robotics Club where we are building a quadruped. Previously, I interned at General Atomics EMS in their Assembly, Integration, and Test team (AI&T) where I helped test new products and helped design and building proprietary testing fixures. 
+          <br/><br/>
+          <a href='/resume'>Click here, or the resume tab, to view my full resume</a>
         </p>
-        <PhotoGallery photos={photos} />
-
-        <h4 style={{ 
-          fontSize: "16px", 
-          textAlign: "left", 
-          color: "#111",
-        }}>
-          Essays
-        </h4>
-        <EssayList files={essayFiles} limit={3} isHome={true} />
-
-        {/* limited projects list */}
-        <h4 style={{ 
-          fontSize: "16px", 
-          textAlign: "left", 
-          color: "#111",
-          fontFamily: "times new roman"
-        }}>
-          Projects
-        </h4>
-        <ProjectList projlist={limitedProjList} showPage={false}/>
       </div>
 
     </div>
