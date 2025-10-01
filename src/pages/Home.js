@@ -1,5 +1,7 @@
+import { NavLink } from 'react-router-dom';
 import profile from '../assets/profile.jpg'
 import React, { useEffect, useState } from 'react';
+import linkedinlogo from '../assets/linkedinlogo.png';
 
 const Link = ({ href, children }) => (
   <a href={href} style={{textDecoration: 'none', color: "#0a507e"}}>
@@ -22,7 +24,10 @@ function Home() {
     }}>
       
     <div style={{ lineHeight: '1.2', fontSize: '16px', fontFamily: 'Lora' }}>
-        <img src={profile} style={{width: 'max(30%, 145px)', aspectRatio: '1', borderRadius: '50%', marginTop: '20px', marginBottom: '20px', display: 'block', marginLeft: 'auto', marginRight: 'auto'}} alt="Banner" />
+      <div style={{ position: 'relative', display: 'flex' }}>
+        <div><h2 style={{ fontSize: '20px', textAlign: 'left', color:'black' }}>Jose Noriega</h2></div>
+        <div><a href="https://linkedin.com/in/jose-g-noriega/" target='_blank'><img src={linkedinlogo} style={{width: '2.5em', height: '2.5em', marginRight: '10px', marginTop: '10px', marginBottom: 'auto', display: 'block'}} /></a></div>
+      </div>
         <p>
           I am Jose, a junior at <Link href='https://www.rice.edu/'>Rice University</Link> studying Mechanical Engineering. I am interested in Robotics, Aerospace, and Defense.
         </p>

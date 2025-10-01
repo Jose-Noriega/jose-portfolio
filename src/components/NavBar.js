@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import linkedinlogo from '../assets/linkedinlogo.png';
 
 function Navbar() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1110);
@@ -80,60 +81,21 @@ function Navbar() {
           zIndex: 100,
         }}
       >
-        <div>
-          <div style={{ marginBottom: '30px' }}>
+          <div style={{ }}>
             <h3 style={{ 
-              fontSize: '16px', 
+              fontSize: '20px', 
               fontFamily: 'Lora',
               fontWeight: 'bold', 
               marginBottom: '15px',
               textTransform: 'uppercase'
             }}>
-            <a href="/Navigation" style={{ color: 'inherit', textDecoration: 'none' }}>
-              Navigation
+            <a href="/" style={{ color: 'inherit', textDecoration: 'none' }}>
+              Jose Noriega
             </a>
             </h3>
-            <NavLink to="/">Home</NavLink>
             <NavLink to="/projects">Projects</NavLink>
             <NavLink to="/resume">Resume</NavLink>
           </div>
-          
-          <div>
-            <h3 style={{ 
-              fontSize: '16px', 
-              fontWeight: 'bold', 
-              marginBottom: '15px',
-              fontFamily: 'Lora',
-              textTransform: 'uppercase'
-            }}>
-              <a
-              // href="/socialMedia"
-              style={{ color: 'inherit', textDecoration: 'none' }}
-            >
-              FIND ME ON
-            </a>
-            </h3>
-            <NavLink to="https://linkedin.com/in/jose-g-noriega/" isExternal>Linkedin</NavLink>
-            <NavLink to="https://github.com/Jose-Noriega" isExternal>GitHub</NavLink>
-            <NavLink to="https://x.com/Jose_G_N" isExternal>X</NavLink>
-          </div>
-        </div>
-
-        <div style={{ marginBottom: '30px' }}>
-          <h3 style={{
-            fontSize: '16px',
-            fontWeight: 'bold',
-            fontFamily: 'Lora',
-            textTransform: 'uppercase',
-          }}>
-            <a
-              href="/contact"
-              style={{ color: 'inherit', textDecoration: 'none', }}
-            >
-              <u>CONTACT ME</u>
-            </a>
-          </h3>
-        </div>
       </nav>
 
       {/* mobile nav */}
