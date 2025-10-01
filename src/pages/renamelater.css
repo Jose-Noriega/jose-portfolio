@@ -1,0 +1,50 @@
+.other-boxes:hover ~ .box-hover {
+    width: 90%;
+    background: blue;
+    transition: 1s;
+}
+
+.box-hover {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    transition: 1s;
+    border-radius: 20px;
+    margin-right: 5px;
+    background: white;
+}
+  
+.box-hover:hover {
+    width: 90%;
+    background: red;
+    transition: 1s;
+}
+
+.box-hover:hover ~ .other-boxes {
+    width: 10%;
+    background: blue;
+    transition: 1s;
+}
+
+.other-boxes {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    transition: 1s;
+    margin-left: 5px;
+    border-radius: 20px;
+}
+
+.other-boxes:hover {
+    width: 10%;
+    background: red;
+    transition: 1s;
+}
+
+
+
+  
+
+  
