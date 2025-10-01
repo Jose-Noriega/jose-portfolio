@@ -25,8 +25,8 @@ function Home() {
       
     <div style={{ lineHeight: '1.2', fontSize: '16px', fontFamily: 'Lora' }}>
       <div style={{ position: 'relative', display: 'flex' }}>
-        <div><h2 style={{ fontSize: '20px', textAlign: 'left', color:'black' }}>Jose Noriega</h2></div>
-        <div><a href="https://linkedin.com/in/jose-g-noriega/" target='_blank'><img src={linkedinlogo} style={{width: '2.5em', height: '2.5em', marginRight: '10px', marginTop: '10px', marginBottom: 'auto', display: 'block'}} /></a></div>
+        <div ><h3 style={{ fontSize: '20px', fontFamily: 'Lora', fontWeight: 'bold', marginBottom: '15px', textTransform: 'uppercase', }}>JOSE NORIEGA</h3></div>
+        <div style={{ position: 'absolute', right: '10px'}}><a href="https://linkedin.com/in/jose-g-noriega/" target='_blank'><img src={linkedinlogo} style={{width: '2.5em', height: '2.5em', marginRight: '10px', marginTop: '10px', marginBottom: 'auto', display: 'block'}} /></a></div>
       </div>
         <p>
           I am Jose, a junior at <Link href='https://www.rice.edu/'>Rice University</Link> studying Mechanical Engineering. I am interested in Robotics, Aerospace, and Defense.
